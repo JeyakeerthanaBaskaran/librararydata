@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <br>
+        <a href="/add">Add Book</a>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Actions</th>
+            </thead>
+            <tbody>
+                {% for book in books %}
+                <tr>
+                    <td>{{book.id}}</td>
+                    <td>{{book.book_name}}</td>
+                    <td>{{book.author}}</td>
+                    <td>
+                        <a id="edit" href="/edit?id={{book.id}}">Edit</a>
+                        <a id="delete" href="/delete?id={{book.id}}">Delete</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

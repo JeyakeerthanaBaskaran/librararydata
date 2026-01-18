@@ -1,0 +1,15 @@
+.edit{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+.delete{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+th,tr{
+    border: solid 1px black;
+}
